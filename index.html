@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="dist/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="dist/fontawesome/css/all.css"/>
+    <link rel="stylesheet" href="./src/css/animation.css"/>
+    <link rel="stylesheet" href="src/css/font-family.css"/>
+    <link rel="stylesheet" href="src/css/style.css"/>
+    <link rel="stylesheet" href="src/css/theme.css"/>
+  <title>My favorite songs</title>
+</head>
+<body>
+  <div class="fond">
+    
+    <!-- NAVIGATION BAR SECTION -->
+    <section id="navigation" uk-sticky>
+    <nav class="navbar navbar-expand-md navbar-dark align-items-center">
+      <a class="navbar-brand" href="#">MF.Songs</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fal fa-bars" id="bars"></i>
+      <i class="fal fa-close" id="close"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav m-auto">
+      <a class="nav-item nav-link" href="#">Home</a>
+      <a class="nav-item nav-link" href="#">Features</a>
+      <a class="nav-item nav-link" href="#">Pricing</a>
+      <a class="nav-item nav-link" href="#">Disabled</a>
+         <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Lorem
+        </a>
+        <div class="dropdown-menu mb-3" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
+    <div class="navbar-nav">
+      <button class="button_navigation">Se connecter</button>
+    </div>
+    </div>
+    </nav> 
+    </section>
+   
+    
+    <!-- BANNER SECTION -->
+    <section id="banner">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="h2_banner">My favorite songs</h2>
+            <p class="p_banner">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu volutpat odio facilisis mauris sit amet massa vitae.</p>
+            <div class="info_banner d-flex text-light">
+              <div class="el_info">
+                <i class="fal fa-music"></i>
+                <p class="p_el_info"><span>59</span>+ Songs</p>
+              </div>
+              <div class="el_info">
+                <i class="fal fa-compact-disc"></i>
+                <p class="p_el_info"><span>26</span>+ Albums</p>
+              </div>
+              <div class="el_info">
+                <i class="fal fa-microphone"></i>
+                <p class="p_el_info"><span>34</span>+ Exclusive singers</p>
+              </div>
+            </div>
+            <button class="button_banner">Start listening <i class="fad fa-play-circle play ml-1"></i></button>
+          </div>
+          <div class="col-md-6">
+            <img src="assets/image/piano_2.png" alt="Banner piano" class="banner_photo img-fluid">
+          </div>
+        </div>
+      </div>
+      <img src="assets/image/wavy_bottom.png" alt="wavy" class="wavy">
+    </section>
+    
+    
+    <!-- LIBRARY MUSIC SECTION -->
+    <section id="library">
+      <div class="container">
+         <h4 class="h4_library">Lorem ipsum <br> Dolor sit amet</h4>
+         <div class="d-flex justify-content-between align-items-center px-2">
+           <p class="p_library">Lorem ipsum dolor sit amet massa <br> vitae et dolore magna aliqua.</p>
+           <i class="fal fa-arrow-circle-right arrow"></i>
+         </div>
+         <div class="row align-items-center">
+           
+           <div class="col-md-4">
+             <div class="element_library">
+               <div class="calque_lib">
+                  <img src="assets/image/library/lib.jpg" alt="lib" class="lib_photo">
+                  <div class="ps_lib">
+                    <i class="fal fa-heart heart"></i>
+                    <img src="assets/image/media-play-02.png" alt="play" id="play_lib">
+                  <div class="description_lib">
+                    <h5 class="h5_library">Classical</h5>
+                    <p class="dsc_lib">Lorem ipsum dolor sit amet</p>
+                  </div>
+               </div> 
+               </div>
+             </div>
+           </div>
+           <div class="col-md-4">
+             <div class="element_library">
+               <div class="calque_lib">
+                  <img src="assets/image/library/lib1.jpg" alt="lib" class="lib_photo">
+                  <div class="ps_lib">
+                    <i class="fal fa-heart heart"></i>
+                    <img src="assets/image/media-play-02.png" alt="play" id="play_lib">
+                  <div class="description_lib">
+                    <h5 class="h5_library">Rock</h5>
+                    <p class="dsc_lib">Lorem ipsum dolor sit amet</p>
+                  </div>
+               </div> 
+               </div>
+             </div>
+           </div>
+           <div class="col-md-4">
+             <div class="element_library">
+               <div class="calque_lib">
+                  <img src="assets/image/library/lib2.jpg" alt="lib" class="lib_photo">
+                  <div class="ps_lib">
+                    <i class="fal fa-heart heart"></i>
+                    <img src="assets/image/media-play-02.png" alt="play" id="play_lib">
+                  <div class="description_lib">
+                    <h5 class="h5_library">R & B</h5>
+                    <p class="dsc_lib">Lorem ipsum dolor sit amet</p>
+                  </div>
+               </div> 
+               </div>
+             </div>
+           </div>
+           
+         </div>
+         <button class="button_see_more">Voir plus <i class="fal fa-plus-circle"></i></button>
+      </div>
+    </section>
+    
+    
+    <!-- LIST SECTION -->
+        <section id="list">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center px-2 mb-4">
+          <h5 class="h5_list font-weight-bold">Top Songs / Tendances</h5>
+          <p class="p_list text-uppercase cursor-pointer">voir plus</p>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-3">
+            <div class="element_list d-flex align-items-center justify-content-between p-3">
+              <div class="d-flex align-items-center">
+                <span class="track_number mr-3">01</span>
+                <img src="assets/image/library/lib1.jpg" alt="cover" class="track_img mr-3">
+                <div>
+                  <h6 class="track_title mb-0">Bohemian Rhapsody</h6>
+                  <p class="track_artist mb-0">Queen</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap_list">
+                <span class="track_duration mr-3">5:55</span>
+                <i class="fal fa-play play_track_icon"></i>
+                <i class="fal fa-ellipsis-v track_more"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 mb-3">
+            <div class="element_list d-flex align-items-center justify-content-between p-3">
+              <div class="d-flex align-items-center">
+                <span class="track_number mr-3">02</span>
+                <img src="assets/image/library/lib2.jpg" alt="cover" class="track_img mr-3">
+                <div>
+                  <h6 class="track_title mb-0">Blinding Lights</h6>
+                  <p class="track_artist mb-0">The Weeknd</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap_list">
+                <span class="track_duration mr-3">3:20</span>
+                <i class="fal fa-play play_track_icon"></i>
+                <i class="fal fa-ellipsis-v track_more"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 mb-3">
+            <div class="element_list d-flex align-items-center justify-content-between p-3">
+              <div class="d-flex align-items-center">
+                <span class="track_number mr-3">03</span>
+                <img src="assets/image/library/lib.jpg" alt="cover" class="track_img mr-3">
+                <div>
+                  <h6 class="track_title mb-0">Nocturne Op. 9 No. 2</h6>
+                  <p class="track_artist mb-0">Chopin</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap_list">
+                <span class="track_duration mr-3">4:30</span>
+                <i class="fal fa-play play_track_icon"></i>
+                <i class="fal fa-ellipsis-v track_more"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 mb-3">
+            <div class="element_list d-flex align-items-center justify-content-between p-3">
+              <div class="d-flex align-items-center">
+                <span class="track_number mr-3">04</span>
+                <img src="assets/image/library/lib1.jpg" alt="cover" class="track_img mr-3">
+                <div>
+                  <h6 class="track_title mb-0">Stairway to Heaven</h6>
+                  <p class="track_artist mb-0">Led Zeppelin</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap_list">
+                <span class="track_duration mr-3">8:02</span>
+                <i class="fal fa-play play_track_icon"></i>
+                <i class="fal fa-ellipsis-v track_more"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- pricing -->
+        <section id="pricing" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h4 class="h4_library font-weight-bold">Choisissez votre forfait</h4>
+          <p class="p_library text-muted">Des offres adaptées à votre passion pour la musique. Annulez à tout moment.</p>
+        </div>
+        
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-4 mb-4">
+            <div class="price_card text-center p-4">
+              <div class="price_header mb-4">
+                <i class="fal fa-seedling price_icon mb-2"></i>
+                <h5 class="font-weight-bold mb-0">Standard</h5>
+              </div>
+              <h3 class="price_amount font-weight-bold mb-3">0€ <span class="price_period">/ mois</span></h3>
+              <ul class="price_features list-unstyled text-left my-4">
+                <li><i class="fal fa-check-circle mr-2 text-success"></i> Accès à 59+ titres</li>
+                <li><i class="fal fa-check-circle mr-2 text-success"></i> Qualité audio standard</li>
+                <li><i class="fal fa-times-circle mr-2 text-danger"></i> Écoute hors-ligne</li>
+                <li><i class="fal fa-times-circle mr-2 text-danger"></i> Publicités entre les morceaux</li>
+              </ul>
+              <button class="button_price_free w-100">Commencer</button>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="price_card premium text-center p-4 position-relative">
+              <span class="badge_premium">Populaire</span>
+              <div class="price_header mb-4">
+                <i class="fal fa-crown price_icon premium_icon mb-2"></i>
+                <h5 class="font-weight-bold mb-0 text-light">Premium</h5>
+              </div>
+              <h3 class="price_amount text-light font-weight-bold mb-3">9,99€ <span class="price_period text-light-50">/ mois</span></h3>
+              <ul class="price_features list-unstyled text-left my-4 text-light">
+                <li><i class="fal fa-check-circle mr-2 text-light"></i> Musique illimitée et sans pub</li>
+                <li><i class="fal fa-check-circle mr-2 text-light"></i> Qualité audio Haute Fidélité</li>
+                <li><i class="fal fa-check-circle mr-2 text-light"></i> Mode hors-ligne disponible</li>
+                <li><i class="fal fa-check-circle mr-2 text-light"></i> Accès aux concerts exclusifs</li>
+              </ul>
+              <button class="button_price_premium w-100">Devenir Premium</button>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="price_card text-center p-4">
+              <div class="price_header mb-4">
+                <i class="fal fa-users price_icon mb-2"></i>
+                <h5 class="font-weight-bold mb-0">Famille</h5>
+              </div>
+              <h3 class="price_amount font-weight-bold mb-3">14,99€ <span class="price_period">/ mois</span></h3>
+              <ul class="price_features list-unstyled text-left my-4">
+                <li><i class="fal fa-check-circle mr-2 text-success"></i> Jusqu'à 6 comptes uniques</li>
+                <li><i class="fal fa-check-circle mr-2 text-success"></i> Sans pub & Mode hors-ligne</li>
+                <li><i class="fal fa-check-circle mr-2 text-success"></i> Blocage des contenus explicites</li>
+                <li><i class="fal fa-check-circle mr-2 text-success"></i> Mix Famille mis à jour régulièrement</li>
+              </ul>
+              <button class="button_price_free w-100">Essayer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+        <!-- TRENDING ARTISTS SECTION -->
+    <section id="artists" class="py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center px-2 mb-4">
+          <div>
+            <h4 class="h4_library font-weight-bold mb-1">Artistes Vedettes</h4>
+            <p class="p_library text-muted mb-0">Découvrez les voix exclusives de notre plateforme.</p>
+          </div>
+          <div class="artist_nav_arrows">
+            <i class="fal fa-chevron-left arrow mr-2"></i>
+            <i class="fal fa-chevron-right arrow"></i>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <!-- Artiste 1 -->
+          <div class="col-6 col-md-3 mb-4">
+            <div class="artist_card">
+              <div class="artist_img_container mb-3">
+                <img src="assets/image/library/lib1.jpg" alt="Artist" class="artist_img">
+                <div class="artist_overlay">
+                  <i class="fad fa-play-circle artist_play"></i>
+                </div>
+              </div>
+              <h6 class="artist_name mb-1">The Weeknd</h6>
+              <p class="artist_followers mb-0">12.4M Abonnés</p>
+            </div>
+          </div>
+
+          <!-- Artiste 2 -->
+          <div class="col-6 col-md-3 mb-4">
+            <div class="artist_card">
+              <div class="artist_img_container mb-3">
+                <img src="assets/image/library/lib2.jpg" alt="Artist" class="artist_img">
+                <div class="artist_overlay">
+                  <i class="fad fa-play-circle artist_play"></i>
+                </div>
+              </div>
+              <h6 class="artist_name mb-1">Billie Eilish</h6>
+              <p class="artist_followers mb-0">9.8M Abonnés</p>
+            </div>
+          </div>
+
+          <!-- Artiste 3 -->
+          <div class="col-6 col-md-3 mb-4">
+            <div class="artist_card">
+              <div class="artist_img_container mb-3">
+                <img src="assets/image/library/lib.jpg" alt="Artist" class="artist_img">
+                <div class="artist_overlay">
+                  <i class="fad fa-play-circle artist_play"></i>
+                </div>
+              </div>
+              <h6 class="artist_name mb-1">Hans Zimmer</h6>
+              <p class="artist_followers mb-0">4.2M Abonnés</p>
+            </div>
+          </div>
+
+          <!-- Artiste 4 -->
+          <div class="col-6 col-md-3 mb-4">
+            <div class="artist_card">
+              <div class="artist_img_container mb-3">
+                <img src="assets/image/library/lib1.jpg" alt="Artist" class="artist_img">
+                <div class="artist_overlay">
+                  <i class="fad fa-play-circle artist_play"></i>
+                </div>
+              </div>
+              <h6 class="artist_name mb-1">Dua Lipa</h6>
+              <p class="artist_followers mb-0">8.5M Abonnés</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- STICKY AUDIO PLAYER -->
+    <div id="audio-player" class="d-flex align-items-center justify-content-between px-4">
+      <!-- Infos Titre Écouté -->
+      <div class="player_track_info d-flex align-items-center">
+        <img src="assets/image/library/lib1.jpg" alt="Current Cover" class="player_cover mr-3">
+        <div>
+          <h6 class="player_title mb-0 text-light">Bohemian Rhapsody</h6>
+          <p class="player_artist mb-0 text-light-50">Queen</p>
+        </div>
+        <i class="fal fa-heart player_heart ml-4"></i>
+      </div>
+
+      <!-- Contrôles du Lecteur -->
+      <div class="player_controls d-flex flex-column align-items-center">
+        <div class="control_buttons d-flex align-items-center mb-2">
+          <i class="fal fa-random player_btn mx-3" title="Aléatoire"></i>
+          <i class="fal fa-step-backward player_btn mx-3"></i>
+          <i class="fas fa-play-circle player_btn_main mx-3"></i>
+          <i class="fal fa-step-forward player_btn mx-3"></i>
+          <i class="fal fa-sync player_btn mx-3" title="Répéter"></i>
+        </div>
+        <!-- Barre de progression -->
+        <div class="player_progress_container d-flex align-items-center">
+          <span class="progress_time text-light-50 mr-2">1:24</span>
+          <div class="player_progress_bar">
+            <div class="player_progress_current"></div>
+          </div>
+          <span class="progress_time text-light-50 ml-2">5:55</span>
+        </div>
+      </div>
+
+      <!-- Contrôles Additionnels (Volume / Liste d'attente) -->
+      <div class="player_utility d-flex align-items-center">
+        <i class="fal fa-list-music player_btn mx-2" title="File d'attente"></i>
+        <i class="fal fa-volume-up player_btn mx-2"></i>
+        <div class="volume_bar mx-2">
+          <div class="volume_current"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row align-items-center contact_box p-5">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h4 class="text-light font-weight-bold mb-3">Ne manquez aucun nouveau titre !</h4>
+            <p class="text-light-50 mb-0">Inscrivez-vous à notre newsletter pour recevoir chaque semaine les nouveautés de vos artistes préférés et des playlists exclusives directement dans votre boîte mail.</p>
+          </div>
+          <div class="col-lg-6">
+            <form class="newsletter_form d-flex">
+              <input type="email" class="form-control newsletter_input mr-2" placeholder="Votre adresse e-mail" required>
+              <button type="submit" class="button_newsletter">S'abonner</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+     <!-- GET IN TOUCH SECTION -->
+    <section id="get-in-touch" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h4 class="h4_library font-weight-bold">Get In Touch</h4>
+          <p class="p_library text-muted">Une question, un partenariat ou besoin d'assistance ? Écrivez-nous !</p>
+        </div>
+
+        <div class="row align-items-stretch">
+          <!-- Formulaire de contact -->
+          <div class="col-lg-7 mb-4 mb-lg-0">
+            <div class="contact_form_container p-4 p-md-5">
+              <form action="#" method="POST">
+                <div class="row">
+                  <div class="col-md-6 form-group mb-3">
+                    <label for="name" class="form_label">Nom complet</label>
+                    <input type="text" id="name" class="form-control contact_input" placeholder="John Doe" required>
+                  </div>
+                  <div class="col-md-6 form-group mb-3">
+                    <label for="email" class="form_label">Adresse E-mail</label>
+                    <input type="email" id="email" class="form-control contact_input" placeholder="john@example.com" required>
+                  </div>
+                </div>
+                <div class="form-group mb-3">
+                  <label for="subject" class="form_label">Sujet</label>
+                  <input type="text" id="subject" class="form-control contact_input" placeholder="Demande de support / Partenariat" required>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="message" class="form_label">Votre message</label>
+                  <textarea id="message" rows="5" class="form-control contact_input" placeholder="Dites-nous tout..." required></textarea>
+                </div>
+                <button type="submit" class="button_submit_contact">
+                  Envoyer le message <i class="fal fa-paper-plane ml-2"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Informations de contact directes -->
+          <div class="col-lg-5">
+            <div class="contact_info_container p-4 p-md-5 d-flex flex-column justify-content-between text-light">
+              <div>
+                <h5 class="font-weight-bold mb-4 text-light">Informations de contact</h5>
+                <p class="text-light-50 mb-5">Vous préférez nous contacter directement ? Voici comment nous joindre. Notre équipe est disponible 24h/7.</p>
+                
+                <div class="d-flex align-items-start mb-4">
+                  <div class="contact_info_icon mr-3">
+                    <i class="fal fa-map-marker-alt"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1 text-light font-weight-bold">Notre Siège</h6>
+                    <p class="text-light-50 mb-0">15 Rue de la Musique, 75001 Paris, France</p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start mb-4">
+                  <div class="contact_info_icon mr-3">
+                    <i class="fal fa-phone-alt"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1 text-light font-weight-bold">Téléphone</h6>
+                    <p class="text-light-50 mb-0">+33 (0)1 23 45 67 89</p>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start mb-4">
+                  <div class="contact_info_icon mr-3">
+                    <i class="fal fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1 text-light font-weight-bold">Support E-mail</h6>
+                    <p class="text-light-50 mb-0">support@mfsongs.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact_info_footer border-top pt-4 mt-4 border-light-10">
+                <p class="text-light-50 mb-0 small">Suivez nos coulisses sur les réseaux sociaux officiels.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer id="footer" class="mt-5 py-4">
+      <div class="container text-center">
+        <div class="footer_socials mb-3">
+          <a href="#" class="mx-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="mx-2"><i class="fab fa-spotify"></i></a>
+        </div>
+        <p class="mb-0 text-muted">&copy; 2026 MF.Songs. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    
+  </div>
+</body>
+  <script defer src="dist/bootstrap/jquery_3_3_1.js"></script>
+  <script defer src="dist/bootstrap/popper.js"></script>
+  <script defer src="dist/bootstrap/bootstrap.js"></script>
+  <script defer src="dist/uikit/js/uikit.js"></script>
+  <script defer src="dist/mixitup/mixitup.js"></script>
+  <script defer>
+    document.addEventListener("DOMContentLoaded", function () {
+      mixitup("#"); 
+    });
+  </script>
+  <script src="dist/prismjs/prism.js"></script>
+  <script defer src="src/js/main.js"></script>
+  <script defer src="src/js/theme.js"></script>
+</html>

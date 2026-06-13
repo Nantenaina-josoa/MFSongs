@@ -1,0 +1,45 @@
+/* 
+╶╶┌──┐╶╶╶╶╶╶╶┌┐╶╶╶┌─┐╶╶╶╶╶╶╶╶┌┐╶╶╶╶╶╶╶╶ 
+╶╶│─┬┘┌─┐┌─┬┐│└┐╶╶│─┤┌─┐╶┌──┐├┤┌┐╶┌┬┐╶╶ 
+╶╶│┌┘╶││││││││┌┤╶╶│┌┘││└┐│││││││└┐│││╶╶ 
+╶╶└┘╶╶└─┘└┴─┘└─┘╶╶└┘╶└──┘└┴┴┘└┘└─┘├┐│╶╶ 
+ */
+ 
+
+@font-face {
+	font-family: 'commissioner';
+	src: url('/assets/font/Commissioner-regular.ttf');
+}
+
+@font-face {
+	font-family: 'crimson';
+	src: url('/assets/font/Crimson Pro-regular.ttf');
+}
+
+@font-face {
+	font-family: 'lato';
+	src: url('/assets/font/Lato-regular.ttf');
+}
+
+@font-face {
+	font-family: 'poppins';
+	src: url('/assets/font/Poppins-Regular.ttf');
+}
+
+
+
+p, b, i, span{
+	font-family: 'commissioner';
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'poppins';
+}
+
+button, a{
+	font-family: 'lato';
+}
+
+li{
+	font-family: 'crimson';
+}

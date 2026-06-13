@@ -1,0 +1,19 @@
+/* NAVIGATION BAR ANIMATION */
+@keyframes animation {
+    from{
+        transform: rotate(00deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animation2 {
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
