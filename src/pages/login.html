@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MF.Songs - Connexion / Inscription</title>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- FontAwesome v5 pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Styles personnalisés -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <div class="auth-container d-flex align-items-center justify-content-center">
+        <div class="auth-box row no-gutters">
+            
+            <!-- Côté Gauche : Visuel & Message de bienvenue (Dégradé MF.Songs) -->
+            <div class="col-md-5 d-none d-md-flex flex-column justify-content-between auth-sidebar text-center p-4">
+                <div class="brand-logo text-left">
+                    <a href="index.html" class="text-white font-weight-bold h4 text-decoration-none">MF.Songs</a>
+                </div>
+                <div class="sidebar-content my-auto">
+                    <i class="fas fa-music fa-3x mb-3 text-white"></i>
+                    <h3 class="text-white font-weight-bold">La musique vous suit partout</h3>
+                    <p class="text-light small px-3">Découvrez des milliers de titres, créez vos playlists et partagez vos coups de cœur.</p>
+                </div>
+                <div class="sidebar-footer">
+                    <p class="text-white-50 small mb-0">&copy; 2026 MF.Songs</p>
+                </div>
+            </div>
+
+            <!-- Côté Droit : Les Formulaires -->
+            <div class="col-md-7 col-12 p-4 p-sm-5 d-flex flex-column justify-content-center bg-white">
+                
+                <!-- BOÎTE LOGIN -->
+                <div id="login-form" class="auth-form-wrapper active">
+                    <h2 class="auth-title">Ravi de vous revoir !</h2>
+                    <p class="auth-subtitle">Connectez-vous pour accéder à votre bibliothèque.</p>
+
+                    <form>
+                        <div class="form-group position-relative">
+                            <label for="login-email">Adresse Email</label>
+                            <i class="fal fa-envelope input-icon"></i>
+                            <input type="email" class="form-control auth-input" id="login-email" placeholder="nom@exemple.com" required>
+                        </div>
+                        <div class="form-group position-relative">
+                            <div class="d-flex justify-content-between">
+                                <label for="login-password">Mot de passe</label>
+                                <a href="#" class="auth-link small">Mot de passe oublié ?</a>
+                            </div>
+                            <i class="fal fa-lock input-icon"></i>
+                            <input type="password" class="form-control auth-input" id="login-password" placeholder="••••••••" required>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label small text-muted" for="rememberMe">Se souvenir de moi</label>
+                        </div>
+                        <button type="submit" class="btn btn-auth btn-block">Se connecter</button>
+                    </form>
+
+                    <p class="text-center text-muted small mt-4 mb-0">
+                        Nouveau sur MF.Songs ? <a href="#" id="go-to-signup" class="auth-link font-weight-bold">Créer un compte</a>
+                    </p>
+                </div>
+
+                <!-- BOÎTE SIGNUP -->
+                <div id="signup-form" class="auth-form-wrapper">
+                    <h2 class="auth-title">Rejoignez MF.Songs</h2>
+                    <p class="auth-subtitle">Créez un compte gratuit pour commencer à écouter.</p>
+
+                    <form>
+                        <div class="form-group position-relative">
+                            <label for="signup-name">Nom d'utilisateur</label>
+                            <i class="fal fa-user input-icon"></i>
+                            <input type="text" class="form-control auth-input" id="signup-name" placeholder="JohnDoe" required>
+                        </div>
+                        <div class="form-group position-relative">
+                            <label for="signup-email">Adresse Email</label>
+                            <i class="fal fa-envelope input-icon"></i>
+                            <input type="email" class="form-control auth-input" id="signup-email" placeholder="nom@exemple.com" required>
+                        </div>
+                        <div class="form-group position-relative">
+                            <label for="signup-password">Mot de passe</label>
+                            <i class="fal fa-lock input-icon"></i>
+                            <input type="password" class="form-control auth-input" id="signup-password" placeholder="Minimum 8 caractères" required>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="terms" required>
+                            <label class="form-check-label small text-muted" for="terms">J'accepte les Conditions d'Utilisation</label>
+                        </div>
+                        <button type="submit" class="btn btn-auth btn-block">Créer mon compte</button>
+                    </form>
+
+                    <p class="text-center text-muted small mt-4 mb-0">
+                        Vous avez déjà un compte ? <a href="#" id="go-to-login" class="auth-link font-weight-bold">Se connecter</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts pour l'interactivité de la page -->
+    <script>
+        const loginForm = document.getElementById('login-form');
+        const signupForm = document.getElementById('signup-form');
+        const btnGoToSignup = document.getElementById('go-to-signup');
+        const btnGoToLogin = document.getElementById('go-to-login');
+
+        btnGoToSignup.addEventListener('click', (e) => {
+            e.preventDefault();
+            loginForm.classList.remove('active');
+            setTimeout(() => {
+                signupForm.classList.add('active');
+            }, 200);
+        });
+
+        btnGoToLogin.addEventListener('click', (e) => {
+            e.preventDefault();
+            signupForm.classList.remove('active');
+            setTimeout(() => {
+                loginForm.classList.add('active');
+            }, 200);
+        });
+    </script>
+</body>
+</html>
