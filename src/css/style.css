@@ -839,3 +839,141 @@ textarea.contact_input {
     padding: 30px !important;
   }
 }
+
+
+/* Héritage et réutilisation des variables MF.Songs */
+:root {
+    --bg-light-color: #fff;
+    --text-color-1: #101010;
+    --text-color-2: #FBFBFB;
+    --color-gradient-1: #E61444;
+    --color-gradient-2: #102B95;
+    --shadow-md: 0 5px 10px rgba(0,0,0,0.24);
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* Arrière plan général avec un léger motif ou dégradé tamisé */
+.auth-container {
+    min-height: 100vh;
+    background: radial-gradient(circle, rgba(16,43,149,0.05) 0%, rgba(230,20,68,0.05) 100%);
+    padding: 20px;
+}
+
+/* La boîte principale */
+.auth-box {
+    width: 100%;
+    max-width: 900px;
+    background-color: var(--bg-light-color);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    min-height: 550px;
+}
+
+/* Barre latérale gauche (Dégradé signature de votre marque) */
+.auth-sidebar {
+    background: linear-gradient(135deg, var(--color-gradient-1) 0%, var(--color-gradient-2) 100%);
+    position: relative;
+}
+
+/* Formulaires */
+.auth-form-wrapper {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+}
+
+.auth-form-wrapper.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.auth-title {
+    color: var(--text-color-1);
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.auth-subtitle {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+/* Style des champs de saisie de texte */
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+.auth-input {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 12px 12px 12px 40px; /* Espace pour l'icône à gauche */
+    font-size: 0.9rem;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.auth-input:focus {
+    border-color: var(--color-gradient-1);
+    box-shadow: 0 0 0 3px rgba(230, 20, 68, 0.1);
+}
+
+/* Positionnement des icônes à l'intérieur des inputs */
+.input-icon {
+    position: absolute;
+    bottom: 14px;
+    left: 15px;
+    color: #a0a0a0;
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+/* Liens dynamiques */
+.auth-link {
+    color: var(--color-gradient-1);
+    transition: color 0.2s;
+}
+
+.auth-link:hover {
+    color: var(--color-gradient-2);
+    text-decoration: none;
+}
+
+/* Bouton Principal en dégradé */
+.btn-auth {
+    background: linear-gradient(90deg, var(--color-gradient-1) 0%, var(--color-gradient-2) 100%);
+    color: var(--text-color-2);
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 15px;
+}
+
+.btn-auth:hover {
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(230, 20, 68, 0.3);
+}
+
+/* Adaptabilité Mobile (Responsive) */
+@media (max-width: 767.98px) {
+    .auth-box {
+        max-width: 450px;
+    }
+}
